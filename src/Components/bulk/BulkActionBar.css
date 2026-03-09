@@ -1,0 +1,14 @@
+.bulk-bar {
+  display: flex; align-items: center; gap: 10px; padding: 10px 24px;
+  background: rgba(108,99,255,0.12); border-bottom: 1px solid rgba(108,99,255,0.3);
+  flex-wrap: wrap;
+}
+.bulk-count { color: #a89fff; font-weight: 600; font-size: 13px; margin-right: 8px; }
+.bulk-bar button, .bulk-bar select {
+  padding: 7px 14px; background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15); border-radius: 7px;
+  color: #fff; font-size: 13px; cursor: pointer; transition: all 0.15s;
+}
+.bulk-bar button:hover { background: rgba(255,255,255,0.15); }
+.bulk-bar select option { background: #1a1a2e; }
+.bulk-delete:hover { background: rgba(255,80,80,0.2) !important; border-color: rgba(255,80,80,0.5) !important; }

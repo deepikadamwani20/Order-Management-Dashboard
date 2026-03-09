@@ -1,0 +1,25 @@
+.order-row { transition: background 0.2s; }
+.order-row:hover { background: rgba(255,255,255,0.03); }
+.order-row td { padding: 12px 16px; border-bottom: 1px solid rgba(255,255,255,0.05);
+  font-size: 13px; color: rgba(255,255,255,0.8); white-space: nowrap; }
+.row-selected { background: rgba(108,99,255,0.08) !important; }
+.row-highlight { animation: highlightFlash 2s ease-out; }
+@keyframes highlightFlash {
+  0% { background: rgba(255,200,50,0.2); }
+  100% { background: transparent; }
+}
+.order-id { font-family: monospace; color: #a89fff; font-size: 12px; }
+.order-amount { font-weight: 600; color: #4ade80; }
+.order-date { color: rgba(255,255,255,0.4); font-size: 12px; }
+.status-badge {
+  display: inline-block; padding: 3px 10px; border-radius: 20px;
+  font-size: 11px; font-weight: 600; cursor: pointer; transition: opacity 0.2s;
+}
+.status-badge:hover { opacity: 0.8; }
+.status-pending { background: rgba(255,200,50,0.15); color: #ffc832; border: 1px solid rgba(255,200,50,0.3); }
+.status-processing { background: rgba(100,160,255,0.15); color: #64a0ff; border: 1px solid rgba(100,160,255,0.3); }
+.status-shipped { background: rgba(150,100,255,0.15); color: #9664ff; border: 1px solid rgba(150,100,255,0.3); }
+.status-delivered { background: rgba(74,222,128,0.15); color: #4ade80; border: 1px solid rgba(74,222,128,0.3); }
+.status-cancelled { background: rgba(255,80,80,0.15); color: #ff5050; border: 1px solid rgba(255,80,80,0.3); }
+.status-refunded { background: rgba(255,140,50,0.15); color: #ff8c32; border: 1px solid rgba(255,140,50,0.3); }
+select { background: #1a1a2e; border: 1px solid #6c63ff; color: #fff; padding: 4px 8px; border-radius: 6px; }

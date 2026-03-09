@@ -1,0 +1,25 @@
+.table-container { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+.table-scroll { flex: 1; overflow: auto; }
+.orders-table { width: 100%; border-collapse: collapse; min-width: 800px; }
+.orders-table thead tr { background: #0f0c29; position: sticky; top: 0; z-index: 10; }
+.orders-table th {
+  padding: 12px 16px; text-align: left; font-size: 11px; font-weight: 600;
+  color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 0.8px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.sortable { cursor: pointer; user-select: none; }
+.sortable:hover { color: rgba(255,255,255,0.7); }
+.sort-icon { margin-left: 4px; opacity: 0.4; }
+.sort-icon.active { opacity: 1; color: #6c63ff; }
+.pagination {
+  display: flex; align-items: center; justify-content: center; gap: 16px;
+  padding: 12px 24px; background: #16213e; border-top: 1px solid rgba(255,255,255,0.06);
+}
+.pagination button {
+  padding: 7px 16px; background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15); border-radius: 8px;
+  color: #fff; font-size: 13px; cursor: pointer; transition: all 0.15s;
+}
+.pagination button:disabled { opacity: 0.3; cursor: not-allowed; }
+.pagination button:not(:disabled):hover { background: #6c63ff; border-color: #6c63ff; }
+.pagination span { color: rgba(255,255,255,0.5); font-size: 13px; }
